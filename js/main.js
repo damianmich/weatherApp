@@ -45,7 +45,7 @@ function unitConverter(temp, number) {
 }
 
 function weatherInfo(latitude, longitude, key) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`)
         .then(resp => resp.json())
         .then(data => {
             sky.setAttribute('src', `img/${data.weather[0].icon}.png`);
