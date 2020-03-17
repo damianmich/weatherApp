@@ -65,7 +65,11 @@ function weatherInfo(link) {
             unitConverter(tempData, number);
             description.textContent = `${data.weather[0].description}`;
             country.textContent = `${data.name}, ${data.sys.country}`;
-        });
+        })
+        .catch(err => {
+            errorStatus.style.display = "block";
+            errorStatus.textContent = 'Nie ma takiego miasta!'
+        });;
 }
 
 function iconInputSearchElements() {
