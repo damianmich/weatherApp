@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap&subset=latin-ext"
     rel="stylesheet">
+  <script src="https://kit.fontawesome.com/fdf3967321.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>WeatherApp</title>
 </head>
@@ -14,9 +15,15 @@
   <main class="container">
     <header class="title">
       <h1>Your weather</h1>
+      <i class="fas fa-search-location"></i>
+      <i class="fas fa-map-marker-alt"></i>
       <div class="error">Error</div>
     </header>
     <div class="weather-container">
+      <div class="input-container">
+        <input type="text" class="search" placeholder="Your city">
+        <i class="fas fa-search"></i>
+      </div>
       <img class="sky" src="img/unknown.png" alt="">
       <div class="temperature">
         <p class="number active">---</p>
